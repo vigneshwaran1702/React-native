@@ -1,0 +1,26 @@
+{
+  "name": "todo-monorepo",
+  "version": "1.0.0",
+  "description": "Fullstack Task Management App: React Native Mobile, Modern Web, & Node.js/Express MongoDB Backend",
+  "scripts": {
+    "backend:dev": "npm --prefix backend run dev",
+    "backend:build": "npm --prefix backend run build",
+    "backend:start": "npm --prefix backend start",
+    "mobile:start": "npm --prefix mobile start",
+    "mobile:android": "npm --prefix mobile run android",
+    "mobile:ios": "npm --prefix mobile run ios",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build",
+    "start": "npm --prefix backend run dev"
+  },
+  "keywords": [
+    "react-native",
+    "typescript",
+    "express",
+    "mongodb",
+    "jwt",
+    "todo-app"
+  ],
+  "author": "",
+  "license": "ISC"
+}

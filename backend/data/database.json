@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "6a9272f709b3a8f9b2ae5c0d",
+      "_id": "6a9272f709b3a8f9b2ae5c0d",
+      "username": "real_user",
+      "name": "Real User",
+      "email": "real@example.com",
+      "password": "$2a$10$EwCPANZJMqfE3x6qhg1WPu1QOND9WL.cHbZP81NtJ654W7bnIiU8i",
+      "createdAt": "2026-08-29T05:49:43.371Z",
+      "updatedAt": "2026-08-29T05:49:43.371Z"
+    },
+    {
+      "id": "6a92731e09b3a8f9b2ae5c0e",
+      "_id": "6a92731e09b3a8f9b2ae5c0e",
+      "username": "vignesh17",
+      "name": "vignesh",
+      "email": "waranv942@gmail.com",
+      "password": "$2a$10$JVh333NLur1t2ytPEM/XKeN6Y0t0fP4psVlHymcCPM6YOmDQLHxKu",
+      "createdAt": "2026-08-29T05:50:22.640Z",
+      "updatedAt": "2026-08-29T05:50:22.640Z"
+    }
+  ],
+  "tasks": []
+}
