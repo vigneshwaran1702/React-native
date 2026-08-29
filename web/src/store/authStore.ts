@@ -9,7 +9,7 @@ interface AuthState {
   error: string | null;
   initAuth: () => Promise<void>;
   login: (identifier: string, password: string) => Promise<boolean>;
-  register: (payload: { username: string; name: string; email: string; password: string }) => Promise<boolean>;
+  register: (payload: { username?: string; name?: string; email: string; password: string }) => Promise<boolean>;
   logout: () => void;
   clearError: () => void;
 }
@@ -64,10 +64,14 @@ export const useAuthStore = create<AuthState>((set) => ({
   register: async ({ username, name, email, password }) => {
     try {
       set({ isLoading: true, error: null });
+      const cleanEmail = email.trim();
+      const derivedUsername = username?.trim() || cleanEmail.split('@')[0] || name?.trim().toLowerCase().replace(/\s+/g, '') || 'user';
+      const cleanName = name?.trim() || derivedUsername;
+
       const res = await apiClient.post('/auth/register', {
-        username: username.trim(),
-        name: name.trim(),
-        email: email.trim(),
+        username: derivedUsername,
+        name: cleanName,
+        email: cleanEmail,
         password,
       });
       const { token, user } = res.data;
