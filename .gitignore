@@ -1,0 +1,120 @@
+# ==========================================
+# Dependencies & Package Managers
+# ==========================================
+node_modules/
+*/node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ==========================================
+# Environment Variables, Secrets & API Keys
+# ==========================================
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!.env.template
+!*.env.example
+!*.env.template
+
+# Private Keys, Certificates, and API Tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.keystore
+*.jks
+credentials.json
+client_secret*.json
+api-keys.json
+api_keys.json
+secrets.json
+google-services.json
+GoogleService-Info.plist
+
+# ==========================================
+# Build & Distribution Artifacts
+# ==========================================
+dist/
+*/dist/
+**/dist/
+build/
+*/build/
+**/build/
+out/
+.output/
+*.tsbuildinfo
+
+# Local Database & Storage
+data/
+*/data/
+**/data/
+*.sqlite
+*.sqlite3
+*.db
+backend/data/
+
+# ==========================================
+# React Native & Mobile Artifacts
+# ==========================================
+.expo/
+.expo-shared/
+web-build/
+metro-cache/
+.metro/
+
+# Android
+android/app/build/
+android/.gradle/
+android/captures/
+android/local.properties
+android/*.iml
+android/app/*.iml
+
+# iOS
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/*.xcassets/
+
+# ==========================================
+# Logs & Debugging
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.eslintcache
+
+# ==========================================
+# Editor & OS Metadata
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sublime-workspace
+*.sublime-project

@@ -1,0 +1,48 @@
+node_modules/
+.expo/
+.expo-shared/
+web-build/
+metro-cache/
+.metro/
+
+# Android
+android/app/build/
+android/.gradle/
+android/captures/
+android/local.properties
+android/*.iml
+android/app/*.iml
+*.apk
+*.aab
+
+# iOS
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/*.xcassets/
+*.ipa
+
+# Environment & API keys
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!.env.template
+!*.env.example
+!*.env.template
+
+google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+
+# Logs & OS
+*.log
+npm-debug.log*
+yarn-debug.log*
+.DS_Store
+Thumbs.db
